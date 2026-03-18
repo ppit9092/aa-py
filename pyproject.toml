@@ -1,6 +1,6 @@
 [project]
-name = "aa-py"
-version = "0.1.0"
+name = "aa-py-sdk"
+version = "0.1.1"
 description = "Production-grade Python SDK for ERC-4337 EntryPoint v0.9 & EIP-7702"
 authors = [
     { name = "AA-PY Contributors" }

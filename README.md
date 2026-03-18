@@ -1,6 +1,6 @@
-# aa-py
+# aa-py-sdk
 
-**aa-py** is a production-grade Python SDK for Ethereum Account Abstraction, specifically designed for **EntryPoint v0.9**, **EIP-7702**, and **ERC-7677**.
+**aa-py-sdk** is a production-grade Python SDK for Ethereum Account Abstraction, specifically designed for **EntryPoint v0.9**, **EIP-7702**, and **ERC-7677**.
 
 ## Features
 
@@ -13,7 +13,7 @@
 ## Installation
 
 ```bash
-pip install .
+pip install aa-py-sdk
 ```
 
 ## Quick Start (AA Transaction)
