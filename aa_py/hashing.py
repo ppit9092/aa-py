@@ -1,3 +1,4 @@
+from typing import Union
 from eth_abi import encode
 from eth_utils import keccak, to_bytes, to_hex
 from .models import UserOperation, PackedUserOperation
@@ -31,7 +32,7 @@ def pack_user_op(user_op: PackedUserOperation) -> bytes:
         ]
     )
 
-def get_user_op_hash(user_op: UserOperation | PackedUserOperation, entry_point: str, chain_id: int) -> bytes:
+def get_user_op_hash(user_op: Union[UserOperation, PackedUserOperation], entry_point: str, chain_id: int) -> bytes:
     """
     Calculates the UserOperation hash (EIP-712).
     In EntryPoint v0.7+, this is keccak256(abi.encode(keccak256(pack(userOp)), entryPoint, chainId))

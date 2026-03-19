@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Tuple, Dict
 
 class NonceManager:
     """
@@ -13,7 +13,7 @@ class NonceManager:
         return (key << 64) | sequence
 
     @staticmethod
-    def unpack_nonce(nonce: int) -> tuple[int, int]:
+    def unpack_nonce(nonce: int) -> Tuple[int, int]:
         """
         Unpacks a uint256 nonce into (key, sequence).
         """
@@ -26,7 +26,7 @@ class NonceManager:
         self.sender = sender_address
         self.entry_point = entry_point_address
         # Cache for local sequence tracking if needed
-        self._local_sequences: dict[int, int] = {}
+        self._local_sequences: Dict[int, int] = {}
 
     def get_nonce(self, key: int = 0) -> int:
         """

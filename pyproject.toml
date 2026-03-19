@@ -12,7 +12,7 @@ dependencies = [
     "eth-abi>=4.0.0",
     "rlp>=3.0.0",
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 
 [build-system]
